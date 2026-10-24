@@ -1,0 +1,12 @@
+{
+  "reader_can_list": true,
+  "reader_cannot_update": true,
+  "reader_cannot_install": true,
+  "reader_cannot_remove": true,
+  "reader_cannot_upgrade": true,
+  "reader_cannot_upgrade_all": true,
+  "reader_cgi_read_success": true,
+  "reader_cgi_write_denied": true,
+  "unauthenticated_cgi_denied": true,
+  "writer_invalid_flag_rejected": true
+}

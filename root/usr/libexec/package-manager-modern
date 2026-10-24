@@ -1,0 +1,50 @@
+#!/bin/sh
+# SPDX-License-Identifier: Apache-2.0
+# A bounded argv gate. The system helper remains the sole mutation backend.
+export LC_ALL=C
+export PATH=/usr/sbin:/usr/bin:/sbin:/bin
+
+fail() { printf '{"code":64,"stderr":"%s"}\n' "$1"; exit 64; }
+[ "$#" -gt 0 ] || fail 'Missing action'
+action="$1"
+shift
+[ -x /usr/bin/apk ] || fail 'APK is required'
+
+case "$action" in
+  list-installed|list-available|source-status|list-updates|update)
+    [ "$#" -eq 0 ] || fail 'This action accepts no arguments'
+    ;;
+  install|upgrade|remove)
+    [ "$#" -gt 0 ] && [ "$#" -le 100 ] || fail 'Select between 1 and 100 packages'
+    for name in "$@"; do
+      [ "${#name}" -le 128 ] || fail 'Package name is too long'
+      case "$name" in
+        ''|[!a-zA-Z0-9]*|*[!a-zA-Z0-9+_.-]*) fail 'Invalid package name' ;;
+      esac
+    done
+    ;;
+  *) fail 'Unsupported action' ;;
+esac
+
+case "$action" in
+  list-installed)
+    exec /usr/bin/apk query --fields all --format json --installed --from system '*'
+    ;;
+  list-available)
+    # Older system helpers use `apk list --full`, which includes multiple
+    # versions. Query chooses the best candidate without a JS version guess.
+    exec /usr/bin/apk query --fields all --format json --available '*'
+    ;;
+  list-updates)
+    # APK decides version ordering, including prereleases and revisions.
+    exec /usr/bin/apk query --available --upgradable --fields name,version --format json '*'
+    ;;
+  source-status)
+    # Cached index descriptions; not a network connectivity test.
+    exec /usr/bin/apk version --indexes
+    ;;
+  *)
+    [ -x /usr/libexec/package-manager-call ] || fail 'System package-manager-call is required'
+    exec /usr/libexec/package-manager-call "$action" "$@"
+    ;;
+esac

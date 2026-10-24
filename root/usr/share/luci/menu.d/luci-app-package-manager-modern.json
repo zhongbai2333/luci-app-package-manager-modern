@@ -1,0 +1,8 @@
+{
+  "admin/system/package-manager-modern": {
+    "title": "Modern Package Manager",
+    "order": 31,
+    "action": { "type": "view", "path": "system/package-manager-modern" },
+    "depends": { "acl": [ "luci-app-package-manager-modern" ] }
+  }
+}

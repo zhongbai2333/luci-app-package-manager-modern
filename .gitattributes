@@ -1,0 +1,12 @@
+* text=auto
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.po text eol=lf
+*.yml text eol=lf
+Makefile text eol=lf
+root/usr/libexec/package-manager-modern text eol=lf
+*.png binary
+*.apk binary

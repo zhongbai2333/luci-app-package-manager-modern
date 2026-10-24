@@ -1,0 +1,23 @@
+{
+  "luci-app-package-manager-modern": {
+    "description": "Read APK package information and manage explicitly selected packages",
+    "read": {
+      "cgi-io": [ "exec" ],
+      "file": {
+        "/usr/libexec/package-manager-modern list-installed": [ "exec" ],
+        "/usr/libexec/package-manager-modern list-available": [ "exec" ],
+        "/usr/libexec/package-manager-modern list-updates": [ "exec" ],
+        "/usr/libexec/package-manager-modern source-status": [ "exec" ]
+      },
+      "ubus": { "luci": [ "getMountPoints" ] }
+    },
+    "write": {
+      "file": {
+        "/usr/libexec/package-manager-modern install *": [ "exec" ],
+        "/usr/libexec/package-manager-modern upgrade *": [ "exec" ],
+        "/usr/libexec/package-manager-modern remove *": [ "exec" ],
+        "/usr/libexec/package-manager-modern update": [ "exec" ]
+      }
+    }
+  }
+}

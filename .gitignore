@@ -1,0 +1,16 @@
+# Local builds and development dependencies
+node_modules/
+packages/*.apk
+*.zip
+*.tar.gz
+*.log
+coverage/
+.DS_Store
+Thumbs.db
+# Local preview connection notes
+docs/preview.md
+# Keys and local configuration
+*.pem
+*.key
+.env
+.env.*

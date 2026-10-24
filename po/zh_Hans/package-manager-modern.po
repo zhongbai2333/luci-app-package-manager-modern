@@ -1,0 +1,278 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-package-manager-modern 0.2.0\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "APK may install or remove additional dependencies. No force flags are used. Package changes can interrupt services; review core and kernel packages carefully."
+msgstr "APK 可能额外安装或移除依赖。本插件不使用强制参数。包操作可能中断服务，请仔细核对核心组件和内核模块。"
+
+msgid "Add selected to queue"
+msgstr "将所选加入待执行"
+
+msgid "All categories"
+msgstr "所有分类"
+
+msgid "All packages"
+msgstr "全部软件包"
+
+msgid "Architecture"
+msgstr "架构"
+
+msgid "Available"
+msgstr "可安装"
+
+msgid "Cached index information; connectivity has not been checked."
+msgstr "以下为缓存索引信息，尚未检测网络连通性。"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Check the plugin installation, APK and LuCI read permissions, then reload."
+msgstr "请检查插件安装、APK 和 LuCI 读取权限，然后重新读取。"
+
+msgid "Clear queue"
+msgstr "清空列表"
+
+msgid "Clear selection"
+msgstr "清除选择"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Dependencies and disk changes are not included."
+msgstr "不包含依赖与实际磁盘变化。"
+
+msgid "Dependency information is descriptive. APK resolves version constraints, virtual providers and automatic removals when executing."
+msgstr "依赖信息仅供参考。实际版本约束、虚拟提供者及自动移除的依赖由 APK 执行时解析。"
+
+msgid "Direct dependencies"
+msgstr "直接依赖"
+
+msgid "Download the configured APK indexes. This does not upgrade installed packages."
+msgstr "下载当前配置的 APK 软件源索引，不会更新已安装的软件包。"
+
+msgid "Execute selected operations"
+msgstr "执行所选操作"
+
+msgid "Exit code"
+msgstr "返回码"
+
+msgid "Free space"
+msgstr "可用空间"
+
+msgid "Has installed reverse dependencies"
+msgstr "有已安装的反向依赖"
+
+msgid "Install package"
+msgstr "安装"
+
+msgid "Installable packages"
+msgstr "可安装"
+
+msgid "Installed"
+msgstr "已安装"
+
+msgid "Installed direct reverse dependencies"
+msgstr "已安装的直接反向依赖"
+
+msgid "Installed size"
+msgstr "安装占用"
+
+msgid "Installed version"
+msgstr "已安装版本"
+
+msgid "Kernel modules"
+msgstr "内核模块"
+
+msgid "Last operation log"
+msgstr "最近操作日志"
+
+msgid "Last refresh completed successfully"
+msgstr "最近刷新成功"
+
+msgid "Last refresh failed; inspect the log."
+msgstr "最近刷新失败，请查看日志。"
+
+msgid "License"
+msgstr "许可证"
+
+msgid "Manage system APK packages using your existing LuCI session."
+msgstr "通过当前 LuCI 会话管理系统 APK 软件包。"
+
+msgid "Modern Package Manager"
+msgstr "现代软件包管理"
+
+msgid "Name A–Z"
+msgstr "名称 A–Z"
+
+msgid "Next page"
+msgstr "下一页"
+
+msgid "No cached repository information."
+msgstr "暂无缓存的软件源索引信息。"
+
+msgid "No description available."
+msgstr "暂无描述。"
+
+msgid "No matching packages."
+msgstr "没有匹配的软件包。"
+
+msgid "None"
+msgstr "无"
+
+msgid "Operation queue"
+msgstr "待执行列表"
+
+msgid "Operations completed."
+msgstr "操作已完成。"
+
+msgid "Operations run in order: install, upgrade, remove. This is not a transaction. A failure stops later groups and does not roll back earlier changes."
+msgstr "操作依次执行：安装、更新、卸载。各组操作不是原子事务。出错时停止后续组，先前的变更不会回滚。"
+
+msgid "Other packages"
+msgstr "其他软件包"
+
+msgid "Package category"
+msgstr "软件包分类"
+
+msgid "Package data may be stale. Reload successfully before making changes."
+msgstr "软件包数据可能已过期，请成功重新读取后再执行操作。"
+
+msgid "Package file size"
+msgstr "包文件大小"
+
+msgid "Package manager operation"
+msgstr "包管理操作"
+
+msgid "Package size"
+msgstr "软件包大小"
+
+msgid "Package status"
+msgstr "软件包状态"
+
+msgid "Previous page"
+msgstr "上一页"
+
+msgid "Queue installation"
+msgstr "加入安装队列"
+
+msgid "Queue removal"
+msgstr "加入卸载队列"
+
+msgid "Queue upgrade"
+msgstr "加入更新队列"
+
+msgid "Queued"
+msgstr "已加入"
+
+msgid "Read-only session: package operations are disabled."
+msgstr "当前会话为只读模式，无法执行包管理操作。"
+
+msgid "Refresh repositories"
+msgstr "刷新软件源"
+
+msgid "Refresh repositories…"
+msgstr "刷新软件源…"
+
+msgid "Refresh result unknown; inspect the log."
+msgstr "刷新结果未知，请查看日志。"
+
+msgid "Reload package data"
+msgstr "重新读取包数据"
+
+msgid "Reloading package state…"
+msgstr "正在重新读取软件包状态…"
+
+msgid "Remove from queue"
+msgstr "移出列表"
+
+msgid "Repositories"
+msgstr "软件源"
+
+msgid "Repository version"
+msgstr "软件源版本"
+
+msgid "Review operations"
+msgstr "操作预览"
+
+msgid "Review operations…"
+msgstr "预览操作…"
+
+msgid "Search package names and descriptions…"
+msgstr "搜索包名或描述…"
+
+msgid "Search packages"
+msgstr "搜索软件包"
+
+msgid "Search relevance"
+msgstr "搜索相关度"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Select packages first, then review all operations."
+msgstr "先选择软件包，再统一预览操作。"
+
+msgid "Select this page"
+msgstr "全选当前页"
+
+msgid "Selected"
+msgstr "已选"
+
+msgid "Selected package files"
+msgstr "所选包文件大小"
+
+msgid "Sort packages"
+msgstr "软件包排序"
+
+msgid "Stopped. Review the log and remaining queue."
+msgstr "操作已停止，请检查日志和剩余待执行项目。"
+
+msgid "Storage information unavailable."
+msgstr "无法获取存储空间信息。"
+
+msgid "The queue is empty."
+msgstr "待执行列表为空。"
+
+msgid "The queue is limited to 100 packages."
+msgstr "待执行列表最多容纳 100 个软件包。"
+
+msgid "The result may be incomplete. Inspect refreshed package state before retrying."
+msgstr "操作结果可能不完整，请核对重新读取的包状态后再重试。"
+
+msgid "The system returns final output only. No live percentage is available."
+msgstr "系统仅返回最终输出，无法提供实时百分比。"
+
+msgid "This application requires APK on OpenWrt 25.12."
+msgstr "此插件需要 OpenWrt 25.12 的 APK 包管理器。"
+
+msgid "Unable to load package information."
+msgstr "无法加载软件包信息。"
+
+msgid "Unable to reload package state"
+msgstr "无法重新读取软件包状态"
+
+msgid "Uninstall package"
+msgstr "卸载"
+
+msgid "Unknown"
+msgstr "未知"
+
+msgid "Update available"
+msgstr "有可用更新"
+
+msgid "Updates"
+msgstr "可更新"
+
+msgid "Upgrade package"
+msgstr "更新"
+
+msgid "View last operation log"
+msgstr "查看最近操作日志"
+
+msgid "Waiting for APK to finish…"
+msgstr "正在等待 APK 完成…"

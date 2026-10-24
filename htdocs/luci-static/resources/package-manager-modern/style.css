@@ -1,0 +1,26 @@
+/* Page-local layout only. Colors and standard buttons come from the active LuCI theme. */
+.pm-modern .pm-heading,.pm-modern .pm-buttons,.pm-modern-dialog .pm-buttons{display:flex;align-items:center;justify-content:space-between;gap:.65rem;flex-wrap:wrap}
+.pm-modern .pm-heading{margin-bottom:1.2rem}.pm-modern .pm-heading h2{margin-bottom:.4rem}
+.pm-modern .pm-heading p{margin-bottom:0}.pm-modern .pm-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(245px,29%);gap:1rem;align-items:start}
+.pm-modern .pm-catalog,.pm-modern .pm-queue,.pm-modern .pm-sources{padding:1rem;min-width:0;border:1px solid rgba(128,128,128,.22);border-color:color-mix(in srgb,currentColor 18%,transparent);border-radius:.5rem;box-shadow:none}
+.pm-modern .pm-tabs{display:flex;gap:.45rem;flex-wrap:wrap;margin:1rem 0}.pm-modern .pm-filters{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:.8rem}
+.pm-modern .pm-filters input{flex:1 1 220px;min-width:0}.pm-modern .pm-filters select{flex:0 1 auto;max-width:100%}
+.pm-modern .pm-selection{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;font-size:.9em;padding:.6rem 0;border-bottom:1px solid rgba(128,128,128,.22)}
+.pm-modern .pm-selection label{display:flex;align-items:center;gap:.3rem;margin:0}.pm-modern .pm-selection>span{margin-right:auto}
+.pm-modern .pm-package{display:flex;align-items:center;gap:.7rem;padding:1rem 0;border-bottom:1px solid rgba(128,128,128,.18)}
+.pm-modern .pm-package-info{flex:1;min-width:0}.pm-modern .pm-package-name{padding:0!important;min-height:0!important;border:none!important;background:transparent!important;box-shadow:none!important;color:inherit!important;text-align:left;white-space:normal;font-weight:600;overflow-wrap:anywhere;cursor:pointer}
+.pm-modern .pm-package-name:hover{text-decoration:underline}.pm-modern .pm-package-info p{margin:.25rem 0;font-size:.9em;opacity:.8;white-space:pre-line;overflow-wrap:anywhere}
+.pm-modern .pm-meta{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;font-size:.8em;opacity:.85;overflow-wrap:anywhere}
+.pm-modern .pm-package>.btn{flex-shrink:0}.pm-modern .pm-check{padding:.65rem .3rem;margin:0;display:flex;align-items:center;justify-content:center}
+.pm-modern .pm-pager{display:flex;justify-content:flex-end;gap:.6rem;align-items:center;flex-wrap:wrap;padding-top:1rem}.pm-modern .pm-pager>span{margin-right:auto;font-size:.9em}
+.pm-modern .pm-queue-item{display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding:.65rem 0;border-bottom:1px solid rgba(128,128,128,.18)}
+.pm-modern .pm-queue-item>div{min-width:0;overflow-wrap:anywhere}.pm-modern .pm-queue-item small{display:block;opacity:.75}.pm-modern .pm-queue-item .btn{white-space:normal;font-size:.75em}
+.pm-modern .pm-queue>p,.pm-modern .pm-sources>p{font-size:.85em;opacity:.8}.pm-modern .pm-queue>.btn{margin:.65rem .4rem 0 0}.pm-modern .pm-empty{padding:1.5rem 0;opacity:.7}
+.pm-modern .pm-log,.pm-modern-dialog .pm-log{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;max-height:22rem;overflow:auto;font-size:.85em;line-height:1.6;text-align:left}
+.pm-modern .pm-sources{margin-top:1rem}.pm-modern .pm-muted{opacity:.75;font-size:.85em}.pm-modern-dialog .pm-details{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:.5rem 1rem}
+.pm-modern-dialog .pm-details dt{opacity:.75}.pm-modern-dialog .pm-details dd{margin:0;overflow-wrap:anywhere}.pm-modern-dialog li{overflow-wrap:anywhere}.pm-modern-dialog .pm-buttons{justify-content:flex-end;margin-top:1rem}
+.pm-modern .pm-queue-jump{display:none}
+.pm-modern .pm-tabs .btn[aria-pressed=true]{outline:2px solid currentColor;outline-offset:2px;font-weight:700}
+@media(max-width:900px){.pm-modern .pm-layout{grid-template-columns:minmax(0,1fr)}.pm-modern .pm-heading{align-items:flex-start}.pm-modern .pm-queue{scroll-margin-top:6rem}}
+@media(max-width:600px){.pm-modern .btn,.pm-modern-dialog .btn,.pm-modern input[type=search],.pm-modern select{min-height:44px}.pm-modern .pm-tabs>.btn{flex:1 1 40%;margin:0;white-space:normal}.pm-modern .pm-filters input{flex-basis:100%;width:100%}.pm-modern .pm-filters select{flex:1;min-width:0}.pm-modern .pm-selection>label{min-height:44px}.pm-modern .pm-check{min-width:34px;min-height:44px}.pm-modern .pm-catalog{padding:.7rem}.pm-modern .pm-package{gap:.4rem}.pm-modern .pm-package>.btn{padding:.4rem .6rem}.pm-modern .pm-meta{gap:.3rem}.pm-modern-dialog .pm-details{grid-template-columns:1fr}.pm-modern-dialog .pm-details dd{margin-bottom:.4rem}}
+@media(max-width:900px){.pm-modern{padding-bottom:4rem}.pm-modern .pm-queue-jump{display:block;position:fixed;bottom:1rem;right:1rem;z-index:50;min-height:44px}}
